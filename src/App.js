@@ -20,7 +20,7 @@ function App() {
     {name: 'Onion', color: 'lightyellow'}
   ]);
 
-  let [chosenIngredients, setChosenIngredients] = useState([{}]);
+  let [chosenIngredients, setChosenIngredients] = useState([]);
   //going to need an addIngredient handler that adds an ingredient to my chosenIngredients array
   let addIngredient = (e, ingredients) => {
     e.preventDefault();
@@ -29,10 +29,13 @@ function App() {
     setChosenIngredients([ingredients, ...chosenIngredients]);
   }
 
+  let clearBurger = () => {
+    setChosenIngredients( [] )
+  }
   return(
     <div>
       <IngredientList ingredients={ingredients} addIngredient={addIngredient}/>
-      <BurgerPane chosenIngredients={chosenIngredients}/>
+      <BurgerPane chosenIngredients={chosenIngredients} clearBurger={clearBurger} />
     </div>
   );
 }

@@ -4,7 +4,7 @@ function ClearBurger(props) {
     
     return (
         <div>
-            <button>Clear Burger</button>
+            <button onClick={() => {props.clearBurger();}}>Clear Burger</button>
         </div>
     )
 }
