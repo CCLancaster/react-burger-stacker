@@ -4,8 +4,8 @@ function ClearBurger(props) {
     
     return (
         <div class="clear">
-            <input type="button" class="stacktable"></input>
-            <button onClick={() => {props.clearBurger();}}>Clear Burger</button>
+            <input type="button" id="stacktable"></input>
+            <button class="eatme" onClick={() => {props.clearBurger();}}>🍔Eat Me 🍔</button>
         </div>
     )
 }

@@ -6,7 +6,7 @@ function Ingredients(props) {
         <div class="ingredients">
             <ul>
                 {props.ingredients.map((newIngredient, i) => (
-                    <li key={`ingredient-${i}`}>{newIngredient.name}    <button onClick={(e) => {props.addIngredient(e, newIngredient);}}>+</button></li>
+                    <li key={`ingredient-${i}`} background-color={newIngredient.color}>{newIngredient.name}    <button onClick={(e) => {props.addIngredient(e, newIngredient);}}>+</button></li>
                 ))}
             </ul>
         </div>
