@@ -1,14 +1,13 @@
 import React from 'react';
+import Ingredients from './Ingredients';
 
 function IngredientList(props) {
     
     return (
-        <ul>
-            {props.ingredients.map((ingredient, i) => (
-                <li key={`ingredientname-${i}`}>{ingredient.name}<button onClick={(e) => {props.addIngredient(e, i);}}>+</button></li>
-            ))}
-        </ul>
+        <div>
+            <Ingredients ingredients={props.ingredients} addIngredient={props.addIngredient} />
+        </div>
     )
-    }
+}
 
-export default IngredientList; 
+export default IngredientList;

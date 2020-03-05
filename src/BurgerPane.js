@@ -6,7 +6,7 @@ function BurgerPane(props) {
     
     return (
         <div>
-            <BurgerStack chosenIngredients={props.chosenIngredients}/>
+            <BurgerStack chosenIngredients={props.chosenIngredients} />
             <ClearBurger />
         </div>
     )
