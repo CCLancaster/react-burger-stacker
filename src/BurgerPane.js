@@ -5,7 +5,7 @@ import ClearBurger from './ClearBurger';
 function BurgerPane(props) {
     
     return (
-        <div>
+        <div class="list burgerlist   ">
             <BurgerStack chosenIngredients={props.chosenIngredients} />
             <ClearBurger clearBurger={props.clearBurger} />
         </div>

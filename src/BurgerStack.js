@@ -6,7 +6,6 @@ function BurgerStack(props) {
         <div>
             <ul>
                 {props.chosenIngredients.map((ingredient, i) => (
-                   
                     <li key={i}>{ingredient.name}</li>
                 ))}
             </ul>

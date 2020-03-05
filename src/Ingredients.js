@@ -3,11 +3,10 @@ import React from 'react';
 function Ingredients(props) {
     
     return (
-        <div>
+        <div class="ingredients">
             <ul>
                 {props.ingredients.map((newIngredient, i) => (
-                    <li key={`ingredient-${i}`}>{newIngredient.name}
-                    <button onClick={(e) => {props.addIngredient(e, newIngredient);}}>+</button></li>
+                    <li key={`ingredient-${i}`}>{newIngredient.name}    <button onClick={(e) => {props.addIngredient(e, newIngredient);}}>+</button></li>
                 ))}
             </ul>
         </div>

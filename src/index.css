@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.list {
+  height: 50%;
+  width: 25%;
+  border: solid black 5px;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+.burgerlist {
+  justify-content: end;
+
+}
+
+.stacktable {
+  height: 20px;
+  width: 100%;
+  border: solid black 1px;
+  background: grey;
+  border-radius: 5px;
+}

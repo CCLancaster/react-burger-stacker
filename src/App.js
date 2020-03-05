@@ -33,7 +33,7 @@ function App() {
     setChosenIngredients( [] )
   }
   return(
-    <div>
+    <div class="app">
       <IngredientList ingredients={ingredients} addIngredient={addIngredient}/>
       <BurgerPane chosenIngredients={chosenIngredients} clearBurger={clearBurger} />
     </div>
