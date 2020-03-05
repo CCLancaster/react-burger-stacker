@@ -1,15 +1,15 @@
 import React from 'react';
+import BurgerStack from './BurgerStack';
+import ClearBurger from './ClearBurger';
 
 function BurgerPane(props) {
     
     return (
-        <ul>
-            <li>chosenIngredients will go here</li>
-        </ul>
+        <div>
+            <BurgerStack chosenIngredients={props.chosenIngredients}/>
+            <ClearBurger />
+        </div>
     )
 }
 
 export default BurgerPane;
-    // {props.chosenIngredients.map((ingredient, i) => (
-    //     <li key={`ingredient-${i}`} >{}</li>
-    // ))}
