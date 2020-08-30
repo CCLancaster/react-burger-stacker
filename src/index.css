@@ -18,8 +18,17 @@ code {
   justify-content: space-around;
 }
 
+/* .burgerlist {
+  display: flex;
+  flex-direction: column;
+}
+.clear {
+  align-self: flex-end;
+  justify-content: center;
+} */
+
 .list {
-  height: 50%;
+  height: 300px;
   width: 25%;
   border: solid black 5px;
   border-radius: 10px;
@@ -28,17 +37,17 @@ code {
 
 ul {
   list-style: none;
+  margin-left: 20%;
 }
 
-.burgerlist {
-  justify-content: end;
-
-}
-
-.stacktable {
+#stacktable {
   height: 20px;
   width: 100%;
   border: solid black 1px;
   background: grey;
   border-radius: 5px;
+}
+
+.eatme {
+  border-radius: 10px;
 }

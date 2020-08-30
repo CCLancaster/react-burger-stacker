@@ -21,6 +21,7 @@ function App() {
   ]);
 
   let [chosenIngredients, setChosenIngredients] = useState([]);
+  
   //going to need an addIngredient handler that adds an ingredient to my chosenIngredients array
   let addIngredient = (e, ingredients) => {
     e.preventDefault();
@@ -32,6 +33,7 @@ function App() {
   let clearBurger = () => {
     setChosenIngredients( [] )
   }
+
   return(
     <div class="app">
       <IngredientList ingredients={ingredients} addIngredient={addIngredient}/>
